@@ -1,4 +1,5 @@
 
+
 .main-text {
     font-size: 30;
 }
@@ -29,12 +30,32 @@
 }
 
 @media (max-width: 600px) {
+
+    .body, html {
+        font-size: 1rem;
+    }
+
+    .imagen-reporte {
+        margin-left: 50px;
+    }
+    
     .cssloco {
-        width: 100%;
+        overflow-x: hidden;
+        display: none;
+    }
+
+
+    .nav-item {
+        display: none;
+    }
+
+    .aerologo {
+        width: 8rem;
     }
 
     .csstest {
         width: 100%;
+        display: none;
     }
 
     .mensaje-responsive {
