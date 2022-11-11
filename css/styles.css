@@ -1,4 +1,6 @@
-
+.html, body {
+    overflow-x: hidden;
+}
 
 .main-text {
     font-size: 30;
@@ -32,12 +34,13 @@
 @media (max-width: 600px) {
 
     .body, html {
-        font-size: 1rem;
+        font-size: .9em;
+        overflow-x: hidden;
     }
 
-    .imagen-reporte {
+    /* .imagen-reporte {
         margin-left: 50px;
-    }
+    } */
     
     .cssloco {
         overflow-x: hidden;
@@ -81,14 +84,8 @@
     margin-top: 30rem;
 }
 
-.datacol {
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    flex: 0 0 25rem
-    
-}
+
+
 
 .imagen-reporte {
     transition: all .3s ease-in-out;
