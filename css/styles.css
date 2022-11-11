@@ -1,0 +1,92 @@
+body {
+    overflow-x: hidden;
+}
+
+.main-text {
+    font-size: 30;
+}
+
+.img{
+    height: 100px;
+    color: blue;
+}
+
+.cssloco {
+    position: absolute;
+    opacity: 1;
+    left: 10%;
+    top: 40%;
+    z-index: -1;
+    height: 100%;
+    width: 200%;
+}
+
+.csstest {
+    position: absolute;
+    opacity: 1;
+    left: -100%;
+    top: 240%;
+    z-index: -1;
+    height: 100%;
+    width: 200%;
+}
+
+.mt-6 {
+    margin-top: 4rem;
+}
+
+.mt-7 {
+    margin-top: 5rem;
+}
+
+.mt-15 {
+    margin-top: 15rem;
+}
+
+.mt-custom {
+    margin-top: 30rem;
+}
+
+.datacol {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 0 0 25rem
+    
+}
+
+.imagen-reporte {
+    transition: all .3s ease-in-out;
+}
+
+.animacion {
+    transition: all .3s ease-in-out;
+}
+
+.animacion:hover{
+    
+    transform: translateY(-20px);
+}
+
+
+
+
+@media (max-width: 800px) {
+    .imagen-reporte {
+        width: 500px;
+        height: 400px;
+    }
+
+    .img-fluid {
+        max-width: none;
+        height: none;
+        
+    }
+
+    .img-mano {
+        margin-bottom: 2rem;
+        width: 400px;
+        height: 300px;
+    }
+}
