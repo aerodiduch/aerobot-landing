@@ -96,14 +96,36 @@
 }
 
 .animacion:hover{
-    
     transform: translateY(-20px);
 }
 
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    
+    .nav-item {
+        display: none;
+    }
+
+    .aerologo {
+        width: 8rem;
+    }
+
+    .cssloco {
+        display: none;
+    }
+
+    .csstest {
+        display: none;
+        overflow-x: hidden;
+    }
+
     .imagen-reporte {
         width: 400px;
         height: 400px;
@@ -116,6 +138,7 @@
     }
 
     .img-mano {
+        margin-top: 2rem;
         margin-bottom: 2rem;
         width: 400px;
         height: 300px;

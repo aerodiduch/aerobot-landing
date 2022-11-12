@@ -23,7 +23,6 @@
         <a href="" class="text-decoration-none h5 p-2 nav-item">Contacto</a>
       </div>
     </header>
-
     <div class="container">
       <main class="d-flex justify-content-center mt-5">
         <section class="main-text mt-2 text-center">
@@ -55,7 +54,7 @@
     <div class="d-flex container mt-15 justify-content-between">
       <div class="row">
 
-        <div class="col-8 col-md-6 col-sm-8 order-0 order-sm-0 animacion mensaje-responsive">
+        <div class="col-8 col-md-6 col-sm-8 order-0 order-lg-0 order-sm-0 animacion mensaje-responsive">
           <h1 class="text-start fw-bold">Estás a un mensaje de distancia.</h1>
           <p class="fs-5 fw-semibold">Olvidate de volver a entrar a varios sitios web para conseguir información. <span class="fw-bold">Aerobot</span> te proporciona la forma de tener todo en un mismo lugar, haciendo que tu operación sea <span class="fw-bold">más rápida y más segura, 100% gratis. ✈️ </span></p>
         </div>
@@ -111,11 +110,11 @@
     <div class="d-flex container mt-15 justify-content-between">
       <div class="row">
 
-        <div class="d-flex col justify-content-center">
+        <div class="d-flex col justify-content-center order-lg-0 order-1">
           <img src="svg/hand.svg" alt="" width="400px" height="400px" class="img-mano animacion"> 
         </div>
 
-        <div class="col animacion mensaje-responsive">
+        <div class="col animacion mensaje-responsive order-lg-1 order-0 col-9 col-md-6">
           <h1 class="text-start fw-bold">Rápido. Eficiente. Fácil.</h1>
           <p class="fs-5 fw-semibold">
             Accedé a toda la información que necesitas desde cualquier parte del mundo, <span class="fw-bold">ilimitadamente y sin costo alguno.</span><br><br>
@@ -126,6 +125,10 @@
       
       </div>
     </div>
+
+    <section id="js-target" class="container d-flex justify-content-center mt-15">
+      <h1>Puto el que es autoscrolleado hasta acá<div class=""></div></h1>
+    </section>
 
     <div id="app"></div>
 
@@ -158,6 +161,17 @@
           console.log("Hola desde Vue!")
         }
       }).mount('#app')
+    </script>
+
+    <script src="js/locomotive-scroll.min.js"></script>
+    <script>
+
+      const scroll = new LocomotiveScroll();
+      const target = document.querySelector('#js-target')
+
+      scroll.scrollTo(target)
+
+
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
