@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
+    <!-- Locomotive -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <title>Hello, world!</title>
   </head>
   <body>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
     <header class="d-flex justify-content-center mt-3">
       <div class="img-aerobot">
@@ -23,6 +24,8 @@
         <a href="" class="text-decoration-none h5 p-2 nav-item">Contacto</a>
       </div>
     </header>
+    
+
     <div class="container">
       <main class="d-flex justify-content-center mt-5">
         <section class="main-text mt-2 text-center">
@@ -36,22 +39,11 @@
       </main>
     </div>
 
-    <div class="cssloco position-absolute animacion">
-      <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
-        <g transform="translate(151.32916831970215, 3.4678802490234375)">
-          <defs>
-            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" style="stop-color: rgb(76, 161, 175);"></stop>
-              <stop offset="100%" style="stop-color: rgb(196, 224, 229);"></stop>
-            </linearGradient>
-          </defs>
-          <path class="blob" d="M479.79863,286.0103Q472.04119,322.0206,452.55149,352.53089Q433.06179,383.04119,405.37643,404.81464Q377.69107,426.5881,351.37643,453.89702Q325.06179,481.20595,287.53089,468.08238Q250,454.95881,217.0103,453.44851Q184.0206,451.93821,151.9794,441.03089Q119.93821,430.12357,88.91762,409.59268Q57.89702,389.06179,52.17506,352.45881Q46.45309,315.85583,25.64417,282.92792Q4.83524,250,12.26316,212.44851Q19.69107,174.89702,53.56179,153.61327Q87.4325,132.32952,103.80893,101.78833Q120.18536,71.24714,149.05149,49.4897Q177.91762,27.73226,213.95881,30.73226Q250,33.73226,285.07208,34.14988Q320.14417,34.5675,351.69565,50.60869Q383.24714,66.64988,407.42792,92.46911Q431.60869,118.28833,436.97483,152.74714Q442.34096,187.20595,464.94851,218.60298Q487.55607,250,479.79863,286.0103Z" fill="url(#gradient)"></path>
-        </g>
-      </svg>
-    </div>
 
 
-    <div class="d-flex container mt-15 justify-content-between">
+
+
+    <div id="mycont1" class="d-flex container mt-15 justify-content-between">
       <div class="row">
 
         <div class="col-8 col-md-6 col-sm-8 order-0 order-lg-0 order-sm-0 animacion mensaje-responsive">
@@ -59,15 +51,38 @@
           <p class="fs-5 fw-semibold">Olvidate de volver a entrar a varios sitios web para conseguir información. <span class="fw-bold">Aerobot</span> te proporciona la forma de tener todo en un mismo lugar, haciendo que tu operación sea <span class="fw-bold">más rápida y más segura, 100% gratis. ✈️ </span></p>
         </div>
 
-        <div class="d-flex col col-md-6  order-1 order-sm-1 justify-content-center animacion">
-          <img src="svg/chat1.svg" alt="" class="imagen-reporte"> 
+        <div class="d-flex col col-md-6  order-1 order-sm-1 justify-content-center">
+          
+          
+          <div class="svg-blob cssloco">
+            <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150%" id="blobSvg">
+              <g transform="translate(151.32916831970215, 3.4678802490234375)">
+                <defs>
+                  <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color: rgb(76, 161, 175);"></stop>
+                    <stop offset="100%" style="stop-color: rgb(196, 224, 229);"></stop>
+                  </linearGradient>
+                </defs>
+                <path class="blob" d="M479.79863,286.0103Q472.04119,322.0206,452.55149,352.53089Q433.06179,383.04119,405.37643,404.81464Q377.69107,426.5881,351.37643,453.89702Q325.06179,481.20595,287.53089,468.08238Q250,454.95881,217.0103,453.44851Q184.0206,451.93821,151.9794,441.03089Q119.93821,430.12357,88.91762,409.59268Q57.89702,389.06179,52.17506,352.45881Q46.45309,315.85583,25.64417,282.92792Q4.83524,250,12.26316,212.44851Q19.69107,174.89702,53.56179,153.61327Q87.4325,132.32952,103.80893,101.78833Q120.18536,71.24714,149.05149,49.4897Q177.91762,27.73226,213.95881,30.73226Q250,33.73226,285.07208,34.14988Q320.14417,34.5675,351.69565,50.60869Q383.24714,66.64988,407.42792,92.46911Q431.60869,118.28833,436.97483,152.74714Q442.34096,187.20595,464.94851,218.60298Q487.55607,250,479.79863,286.0103Z" fill="url(#gradient)"></path>
+              </g>
+            </svg>
+          </div>
+
+          <img src="svg/chat1.svg" alt="" class="imagen-reporte animacion">
+          
         </div>
       
       </div>
     </div>
 
 
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="csstest"
+
+    <div id='mycont1' class="d-flex container mt-15 justify-content-between">
+      <div class="row">
+
+        <div class="d-flex col justify-content-center order-lg-0 order-1">
+          <img src="svg/hand.svg" alt="" width="400px" height="400px" class="img-mano animacion"> 
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="csstest"
       width="879.789px" height="936.952px" viewBox="0 0 879.789 936.952" style="enable-background:new 0 0 879.789 936.952;" xml:space="preserve">  
       <style type="text/css">
         .st0{fill:url(#SVGID_1_);}
@@ -105,16 +120,10 @@
       c39.307-1.931,79.005,48.616,128.506,106.867C628.565,339.379,686.196,407.103,722.714,480.385z"/>
       </g>
     </svg>
-
-
-    <div class="d-flex container mt-15 justify-content-between">
-      <div class="row">
-
-        <div class="d-flex col justify-content-center order-lg-0 order-1">
-          <img src="svg/hand.svg" alt="" width="400px" height="400px" class="img-mano animacion"> 
         </div>
 
-        <div class="col animacion mensaje-responsive order-lg-1 order-0 col-9 col-md-6">
+
+        <div class="col mensaje-responsive order-lg-1 order-0 col-9 col-md-6 animacion">
           <h1 class="text-start fw-bold">Rápido. Eficiente. Fácil.</h1>
           <p class="fs-5 fw-semibold">
             Accedé a toda la información que necesitas desde cualquier parte del mundo, <span class="fw-bold">ilimitadamente y sin costo alguno.</span><br><br>
@@ -126,13 +135,27 @@
       </div>
     </div>
 
-    <section id="js-target" class="container d-flex justify-content-center mt-15">
-      <h1>Puto el que es autoscrolleado hasta acá<div class=""></div></h1>
-    </section>
+    <div id="mycont1" class="d-flex container mt-15 justify-content-between">
+      <div class="row">
 
-    <div id="app"></div>
+        <div class="col-8 col-md-6 col-sm-8 order-0 order-lg-0 order-sm-0 animacion mensaje-responsive">
+          <h1 class="text-start fw-bold">Pensado para todos. </h1>
+          <p class="fs-5 fw-semibold">Ya seas <span class="fw-bold">piloto, despachante, agente de rampa, señalero, controlador de tránsito aéreo </span>
+            o sea cual sea tu rol en la aviación y necesites conseguir información de forma <span class="fw-bold">rápida, eficiente y sin complicaciones</span>,
+            <span class="fw-bold">Aerobot</span> está pensado para vos. 
+            <span class="fw-bold"> 🚀 </span></p>
+        </div>
 
+        <div class="d-flex col col-md-6  order-1 order-sm-1 justify-content-center">
+          
+          <img src="svg/pilot-svgrepo-com.svg" id="pilotoimagen" width="65%" alt="" class="imagen-reporte animacion">
+          
+        </div>
+      
+      </div>
+    </div>
 
+<!-- 
     <script>
       const { createApp } = Vue
 
@@ -161,19 +184,15 @@
           console.log("Hola desde Vue!")
         }
       }).mount('#app')
-    </script>
-
-    <script src="js/locomotive-scroll.min.js"></script>
-    <script>
-
-      const scroll = new LocomotiveScroll();
-      const target = document.querySelector('#js-target')
-
-      scroll.scrollTo(target)
+    </script> -->
 
 
-    </script>
 
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+
   </body>
 </html>
