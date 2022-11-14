@@ -8,33 +8,55 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
     <!-- Locomotive -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+
+    
+    
+    <!-- VueJS -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/main.js"></script>
+    
     <title>Hello, world!</title>
+
+
+
   </head>
   <body>
 
-    <header class="d-flex justify-content-center mt-3">
-      <div class="img-aerobot">
-        <img src="imgs/logo.png" alt="" width="8%" class="aerologo">
-      </div>
-      <div class="botones mt-1 justify-content-between">
-        <a href="" class="text-decoration-none h5 p-2 nav-item">Suscribirse</a>
-        <a href="" class="text-decoration-none h5 p-2 nav-item">Contacto</a>
-      </div>
-    </header>
+
+
+
     
+  <main data-scroll-container>
+
+      <header class="d-flex justify-content-center mt-3">
+        <div class="img-aerobot">
+          <img src="imgs/logo.png" alt="" width="8%" class="aerologo">
+        </div>
+        
+        <div class="botones mt-1 justify-content-between">
+          <a href="" class="text-decoration-none h5 p-2 nav-item">Suscribirse</a>
+          <a href="" class="text-decoration-none h5 p-2 nav-item">Contacto</a>
+        </div>
+    </header>
+
+
 
     <div class="container">
       <main class="d-flex justify-content-center mt-5">
         <section class="main-text mt-2 text-center">
           <picture>
-          <img src="imgs/prueba1_aerobot_sobresaliendo.png" alt="" height="350rem" class="mb-3">
+            <img src="imgs/prueba1_aerobot_sobresaliendo.png" alt="" height="350rem" class="mb-3" >
           </picture>
-          <p class="fs-1 fw-bold">El bot que hace que volar <br>sea cada vez más fácil.</p>
-          <p class="fs-3 fw-semibold">METAR, TAF, NOTAMS y más.<br>Solo a un mensaje de distancia</p>
+          
+          <p class="fs-1 fw-bold" >El bot que hace que volar <br>sea cada vez más fácil.</p>
+          <p class="fs-3 fw-semibold" >METAR, TAF, NOTAMS y más.<br>Solo a un mensaje de distancia</p>
           <a class="btn btn-success btn-lg mt-3" href="https://wa.link/ftnxr8" role="button">Ir a Aerobot</a>
+        
         </section>
       </main>
     </div>
@@ -43,17 +65,16 @@
 
 
 
+
     <div id="mycont1" class="d-flex container mt-15 justify-content-between">
       <div class="row">
-
-        <div class="col-8 col-md-6 col-sm-8 order-0 order-lg-0 order-sm-0 animacion mensaje-responsive">
-          <h1 class="text-start fw-bold">Estás a un mensaje de distancia.</h1>
-          <p class="fs-5 fw-semibold">Olvidate de volver a entrar a varios sitios web para conseguir información. <span class="fw-bold">Aerobot</span> te proporciona la forma de tener todo en un mismo lugar, haciendo que tu operación sea <span class="fw-bold">más rápida y más segura, 100% gratis. ✈️ </span></p>
+        
+        <div class="col-8 col-md-6 col-sm-8 order-0 order-lg-0 order-sm-0 mensaje-responsive">
+          <h1 class="text-start fw-bold" data-scroll data-scroll-speed="1">Estás a un mensaje de distancia.</h1>
+          <p class="fs-5 fw-semibold" data-scroll data-scroll-speed="1">Olvidate de volver a entrar a varios sitios web para conseguir información. <span class="fw-bold">Aerobot</span> te proporciona la forma de tener todo en un mismo lugar, haciendo que tu operación sea <span class="fw-bold">más rápida y más segura, 100% gratis. ✈️ </span></p>
         </div>
 
         <div class="d-flex col col-md-6  order-1 order-sm-1 justify-content-center">
-          
-          
           <div class="svg-blob cssloco">
             <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150%" id="blobSvg">
               <g transform="translate(151.32916831970215, 3.4678802490234375)">
@@ -67,21 +88,17 @@
               </g>
             </svg>
           </div>
-
-          <img src="svg/chat1.svg" alt="" class="imagen-reporte animacion">
-          
+          <img src="svg/chat1.svg" alt="" class="imagen-reporte" data-scroll data-scroll-speed="1">
         </div>
-      
       </div>
     </div>
-
 
 
     <div id='mycont1' class="d-flex container mt-15 justify-content-between">
       <div class="row">
 
         <div class="d-flex col justify-content-center order-lg-0 order-1">
-          <img src="svg/hand.svg" alt="" width="400px" height="400px" class="img-mano animacion"> 
+          <img src="svg/hand.svg" alt="" width="400px" height="400px" class="img-mano" data-scroll data-scroll-speed="1" data-scroll-delay="0.1"> 
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="csstest"
       width="879.789px" height="936.952px" viewBox="0 0 879.789 936.952" style="enable-background:new 0 0 879.789 936.952;" xml:space="preserve">  
       <style type="text/css">
@@ -124,8 +141,8 @@
 
 
         <div class="col mensaje-responsive order-lg-1 order-0 col-9 col-md-6 animacion">
-          <h1 class="text-start fw-bold">Rápido. Eficiente. Fácil.</h1>
-          <p class="fs-5 fw-semibold">
+          <h1 class="text-start fw-bold" data-scroll data-scroll-speed="1">Rápido. Eficiente. Fácil.</h1>
+          <p class="fs-5 fw-semibold" data-scroll data-scroll-speed="1">
             Accedé a toda la información que necesitas desde cualquier parte del mundo, <span class="fw-bold">ilimitadamente y sin costo alguno.</span><br><br>
             <span class="fw-bold">Nunca fue tan fácil estar informado.</span> <br><br>
             Además, <span class="fw-bold">no necesitas tener señal 4G o 3G.</span> Con tener <span class="fw-bold">minima disponibilidad de internet móvil</span> es más que suficiente.
@@ -135,12 +152,12 @@
       </div>
     </div>
 
-    <div id="mycont1" class="d-flex container mt-15 justify-content-between">
-      <div class="row">
 
-        <div class="col-8 col-md-6 col-sm-8 order-0 order-lg-0 order-sm-0 animacion mensaje-responsive">
-          <h1 class="text-start fw-bold">Pensado para todos. </h1>
-          <p class="fs-5 fw-semibold">Ya seas <span class="fw-bold">piloto, despachante, agente de rampa, señalero, controlador de tránsito aéreo </span>
+    <div id="mycont1" class="d-flex container mt-15 justify-content-between">
+      <div class="row" >
+        <div class="col-8 col-md-6 col-sm-8 order-0 order-lg-0 order-sm-0 mensaje-responsive">
+          <h1 class="text-start fw-bold" data-scroll data-scroll-speed="1">Pensado para todos. </h1>
+          <p class="fs-5 fw-semibold" data-scroll data-scroll-speed="1">Ya seas <span class="fw-bold">piloto, despachante, agente de rampa, señalero, controlador de tránsito aéreo </span>
             o sea cual sea tu rol en la aviación y necesites conseguir información de forma <span class="fw-bold">rápida, eficiente y sin complicaciones</span>,
             <span class="fw-bold">Aerobot</span> está pensado para vos. 
             <span class="fw-bold"> 🚀 </span></p>
@@ -148,12 +165,53 @@
 
         <div class="d-flex col col-md-6  order-1 order-sm-1 justify-content-center">
           
-          <img src="svg/pilot-svgrepo-com.svg" id="pilotoimagen" width="65%" alt="" class="imagen-reporte animacion">
+          <img src="svg/pilot-svgrepo-com.svg" id="" width="60%" alt="" class="imagen-piloto pad-bot" data-scroll data-scroll-speed="1">
           
+        </div>
+      </div>
+    </div>
+
+    <div id='mycont1' class="d-flex container mt-15 justify-content-between">
+      <div class="row">
+
+        <div class="d-flex col justify-content-center order-lg-0 order-1">
+          <img src="svg/hand.svg" alt="" width="400px" height="400px" class="img-mano" data-scroll data-scroll-speed="1" data-scroll-delay="0.1"> 
+              
+        </div>
+
+
+        <div class="col mensaje-responsive order-lg-1 order-0 col-9 col-md-6 animacion">
+          <h1 class="text-start fw-bold" data-scroll data-scroll-speed="1">Rápido. Eficiente. Fácil.</h1>
+          <p class="fs-5 fw-semibold" data-scroll data-scroll-speed="1">
+            Accedé a toda la información que necesitas desde cualquier parte del mundo, <span class="fw-bold">ilimitadamente y sin costo alguno.</span><br><br>
+            <span class="fw-bold">Nunca fue tan fácil estar informado.</span> <br><br>
+            Además, <span class="fw-bold">no necesitas tener señal 4G o 3G.</span> Con tener <span class="fw-bold">minima disponibilidad de internet móvil</span> es más que suficiente.
+          </p>
         </div>
       
       </div>
     </div>
+
+
+
+    
+
+  </main>
+
+
+
+
+
+    <script>
+      (function () {
+          var scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            direction: 'vertical',
+            smooth: true
+          });
+      })();
+    </script>
+
 
 <!-- 
     <script>
@@ -188,10 +246,7 @@
 
 
 
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+
 
 
   </body>
