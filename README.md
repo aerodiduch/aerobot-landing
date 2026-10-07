@@ -1,6 +1,8 @@
 
 # Aerobot Landing Page
 
+> Ya no lo mantengo. Queda archivado como referencia.
+
 Es mi primera vez haciendo algo con CSS, HTML y JS. La verdad que no tengo idea lo que estoy haciendo, pero uniendo conceptos varios pude lograr hacer algo bonito.
 
 
